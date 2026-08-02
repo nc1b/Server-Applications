@@ -1,13 +1,19 @@
 # Server Applications
-Server Applications is a bot that forwards Discord’s server join applications to a designated channel for staff to review. It doesn’t allow staff to manage the applications directly but helps keep everything in one place, making it easier to track and review incoming requests.
 
-If you wanna read more about discords join applications, [read here](https://support.discord.com/hc/en-us/articles/29729107418519-Server-Member-Applications).
+Server Applications is a Discord bot that forwards server-member applications to a designated channel for staff review. It keeps incoming requests in one place without requiring staff to manage applications from a separate dashboard.
 
+For background on Discord's server-member applications, see the [official Discord support article](https://support.discord.com/hc/en-us/articles/29729107418519-Server-Member-Applications).
 
-## Links
-* https://discord.com/oauth2/authorize?client_id=1326624940010639400
- 
+## Invite
+
+[Add Server Applications to Discord](https://discord.com/oauth2/authorize?client_id=1326624940010639400)
+
 ## Preview
-<img src="https://github.com/bugsbirb/Applications/blob/7011964eb0bbd9b39a040cbc90458048a623458e/Assets/config.png" alt="Config">
-<img src="https://github.com/bugsbirb/Applications/blob/7011964eb0bbd9b39a040cbc90458048a623458e/Assets/app.png" alt="App">
 
+![Configuration preview](https://raw.githubusercontent.com/nc1b/Server-Applications/master/Assets/config.png)
+
+![Application preview](https://raw.githubusercontent.com/nc1b/Server-Applications/master/Assets/app.png)
+
+## Security
+
+Keep bot credentials in environment variables or your hosting provider's secret manager. Never commit a bot token, webhook URL, or other credential to the repository. If a secret is exposed, revoke and rotate it immediately in the relevant provider dashboard.
